@@ -1,4 +1,29 @@
+* {
+  text-align: center;
+}
+
+.header {
+  background-image: url("https://nwscdn.com/media/catalog/product/cache/all/thumbnail/300x/9df78eab33525d08d6e5fb8d27136e95/t/r/training_soccer_ball_in_orange.jpg");
+}
+
+h1 {
+  color: green;
+}
 .dark-mode {
   background: gray;
   color: papayawhip;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 30px;
 }

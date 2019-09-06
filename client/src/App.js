@@ -41,7 +41,7 @@ class App extends React.Component {
       .then(response => {
         console.log(response);
         this.setState({ data: response.data});
-        console.log(this.state, "data from state")
+        console.log(this.state, "data from state");
       })
       .catch(err => console.log(err))
 
@@ -50,13 +50,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <h1>Players: Women's Soccer</h1>
-        <ChimeIn />
-        <div>
+        <div className="header">
+          <NavBar />
+          <h1>Players: Women's Soccer</h1>
+          <ChimeIn />
+        </div>
+        <div className="wrapper">
           {this.state.data.map(player => {
             return (
-              <div key={player.id}>
+              <div className="card" key={player.id}>
                 <h3>{player.name}</h3>
                 <p>{player.country}</p>
               </div>
