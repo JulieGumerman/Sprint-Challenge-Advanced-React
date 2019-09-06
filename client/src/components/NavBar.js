@@ -10,7 +10,7 @@ const NavBar = () => {
     }
     return (
         <div>
-            <button onClick={changeColors}>Luke, I am your NavBar</button>
+            <button title="dark mode control"onClick={changeColors}>Dark mode?</button>
         </div>
     )
 }

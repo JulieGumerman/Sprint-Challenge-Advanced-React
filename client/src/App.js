@@ -50,7 +50,7 @@ class App extends React.Component {
     return (
       <div>
         <NavBar />
-        <h1>Go US Soccer!!!</h1>
+        <h1 title="header">Players: Women's Soccer</h1>
         <div>
           {this.state.data.map(player => {
             return (
