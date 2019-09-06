@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 
 import NavBar from "./components/NavBar";
+import ChimeIn from "./components/ChimeIn";
 
 // function App() {
 //   return (
@@ -51,6 +52,7 @@ class App extends React.Component {
       <div>
         <NavBar />
         <h1 title="header">Players: Women's Soccer</h1>
+        <ChimeIn />
         <div>
           {this.state.data.map(player => {
             return (
