@@ -15,10 +15,9 @@ test("has dark mode control", () => {
   doc.queryAllByTitle(/dark/i);
 });
 
-test("contains title", () => {
+test("contains header", () => {
   const doc = render(<App />);
-  doc.getByText(/soccer/i);
-  doc.queryAllByTitle(/header/i);
+  doc.queryByText(/players/i)
 })
 
 
