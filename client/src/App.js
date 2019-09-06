@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 
+import NavBar from "./components/NavBar";
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -47,6 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <NavBar />
         <h1>Go US Soccer!!!</h1>
         <div>
           {this.state.data.map(player => {
